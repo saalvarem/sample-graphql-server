@@ -1,0 +1,9 @@
+# this file contains only the query types for "simplyRETS" 
+# but it references the types from other files
+# because all type definitions will be merged
+# together at run-time. However, this can be more
+# organized/extensible if the number of queries grow
+
+type Query {
+  getListings(city:String!): [Listing]
+}

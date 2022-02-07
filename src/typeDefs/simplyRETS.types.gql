@@ -1,0 +1,167 @@
+# this file contains only the custom types for "simplyRETS" 
+
+type Listing {
+    address: Address
+    agent: Agent
+    agreement: String
+    association: Association
+    coAgent: CoAgent
+    disclaimer: String
+    favoriteCount: Int
+    geo: Geo
+    internetAddressDisplay: String
+    internetEntireListingDisplay: String
+    leaseTerm: String
+    leaseType: String
+    listDate: String
+    listingId: String
+    listPrice: Int
+    mls: Mls
+    mlsId: Int
+    modified: String
+    office: Office
+    originalListPrice: String
+    photos: [String]
+    privateRemarks: String
+    property: Property
+    remarks: String
+    sales: Sales
+    school: School
+    showingContactName: String
+    showingContactPhone: String
+    showingInstructions: String
+    tax: Tax
+    terms: String
+    virtualTourUrl: String
+}
+
+type Association { 
+    amenities: String 
+    fee: Int
+    frequency: String
+    name: String
+}
+
+type Agent { 
+    address: String
+    contact: String
+    firstName: String
+    id: String 
+    lastName: String
+}
+
+type Office {
+    brokerid: String
+    contact: String
+    name: String
+    servingName: String
+}
+
+type Sales { 
+    agent: Agent
+    closeDate: String
+    closePrice: Int
+    contractDate: String
+    office: Office 
+}
+
+type CoAgent { 
+    address: String
+    contact: String
+    firstName: String
+    id: String 
+    lastName: String
+}
+
+type Tax { 
+    id: String 
+    taxAnnualAmount: Int 
+    taxYear: Int 
+}
+
+type Geo { 
+    county: String
+    directions: String 
+    lat: Float
+    lng: Float
+    marketArea: String
+}
+
+type Mls { 
+    area: String
+    areaMinor: String 
+    daysOnMarket: Int
+    originalEntryTimestamp: String
+    originatingSystemName: String
+    status: String
+    statusText: String
+}
+
+type School { 
+    district: String 
+    elementarySchool: String
+    highSchool: String
+    middleSchool: String
+ }
+
+type Address { 
+    city: String
+    country: String
+    crossStreet: String
+    full: String
+    postalCode: String
+    state: String
+    streetName: String
+    streetNumber: Int
+    streetNumberText: String
+    unit: String 
+}
+
+type Parking { 
+    description: String 
+    leased: String 
+    spaces: Int 
+}
+
+type Property { 
+    accessibility: String
+    acres: String
+    additionalRooms: String
+    area: Int
+    areaSource: String
+    bathrooms: String
+    bathsFull: Int
+    bathsHalf: Int
+    bathsThreeQuarter: String
+    bedrooms: Int
+    construction: String
+    cooling: String
+    exteriorFeatures: String
+    fireplaces: Int
+    flooring: String
+    foundation: String
+    garageSpaces: Float
+    heating: String
+    interiorFeatures: String
+    laundryFeatures: String
+    lotDescription: String
+    lotSize: String
+    lotSizeArea: String
+    lotSizeAreaUnits: String
+    maintenanceExpense: String
+    occupantName: String
+    occupantType: String
+    ownerName: String
+    parking: Parking 
+    pool: String
+    roof: String
+    stories: Int
+    style: String
+    subdivision: String
+    subType: String
+    subTypeText: String
+    type: String
+    view: String
+    water: String
+    yearBuilt: Int
+}
